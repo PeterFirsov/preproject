@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  position: relative;
+  width: 202px;
+  height: 52px;
+}
+
+.logo p {
+  position: absolute;
+  top: -20px;
+  left: 67px;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.logo span {
+  position: absolute;
+  top: 36px;
+  left: 67px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}

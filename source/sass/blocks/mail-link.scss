@@ -1,0 +1,25 @@
+.mail-link {
+  display: block;
+  width: 94px;
+  height: 23px;
+  padding-left: 39px;
+  font-family: "PT Mono", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mail-link::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 19px;
+  height: 14px;
+  background-image: url("../img/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

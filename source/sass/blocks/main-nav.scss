@@ -1,0 +1,33 @@
+.main-nav {
+  width: 37px;
+  height: 37px;
+}
+
+.main-nav__button {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__button::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 37px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.main-nav__button::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 37px;
+  height: 1px;
+  background-color: #ffffff;
+}
