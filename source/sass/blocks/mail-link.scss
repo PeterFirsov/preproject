@@ -10,16 +10,18 @@
   line-height: 18px;
   text-decoration: none;
   color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 19px;
+    height: 14px;
+    background-image: url("../img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.mail-link::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 19px;
-  height: 14px;
-  background-image: url("../img/envelope.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+

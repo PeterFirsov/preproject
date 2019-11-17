@@ -10,24 +10,26 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 37px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    width: 37px;
+    height: 1px;
+    background-color: #ffffff;
+  }
 }
 
-.main-nav__button::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 0;
-  width: 37px;
-  height: 1px;
-  background-color: #ffffff;
-}
 
-.main-nav__button::after {
-  content: "";
-  position: absolute;
-  bottom: 11px;
-  left: 0;
-  width: 37px;
-  height: 1px;
-  background-color: #ffffff;
-}
