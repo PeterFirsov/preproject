@@ -8,7 +8,7 @@
   background-color: #1B2D37;
   background-image: url("../img/background.png"), url("../img/plates.png"), url("../img/twintrangle.png");
   background-repeat: no-repeat;
-  background-position: center top, right 26.5% bottom 29%, right 28.3% bottom 31.7%;
+  background-position: center top, left calc(50% + 430px) bottom 29%, left calc(50% + 405px) bottom 31.7%;
   box-sizing: border-box;
 }
 

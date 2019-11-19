@@ -3,7 +3,7 @@
   background-color: #00B2FF;
   background-image: url("../img/airplane.png"), url("../img/twintrangle.png");
   background-repeat: no-repeat;
-  background-position: left 32.6% top 42.5%, left 26% top 48%;
+  background-position: right calc(50% + 355px) top 42.5%, right calc(50% + 450px) top 48%;
 }
 
 .question-form__wrapper {
