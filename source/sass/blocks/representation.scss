@@ -6,10 +6,18 @@
   min-height: 878px;
   padding-top: 315px;
   background-color: #1B2D37;
-  background-image: url("../img/background.png"), url("../img/plates.png"), url("../img/twintrangle.png");
+  background-image: url("../img/background@1x.png"), url("../img/plates@1x.png"), url("../img/twintrangle@1x.png");
   background-repeat: no-repeat;
+  background-size: 100%, auto, auto;
   background-position: center top, left calc(50% + 430px) bottom 29%, left calc(50% + 405px) bottom 31.7%;
   box-sizing: border-box;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .representation {
+    background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
+    background-size: 2249px auto, 707px auto, 670px auto;
+  }
 }
 
 .representation__header {
@@ -21,7 +29,7 @@
   padding: 0 30px;
   z-index: 2;
 
-  span {
+  .representation__link {
     position: absolute;
     bottom: -148px;
     left: -5px;
@@ -31,8 +39,13 @@
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
+    text-decoration: none;
     opacity: 0.5;
     transform: rotate(-90deg);
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   b {

@@ -5,12 +5,13 @@
 
 .page-footer__wrapper {
   display: flex;
-  max-width: 1415px;
+  max-width: 1411px;
   min-width: 320px;
   min-height: 200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 28px;
+  padding-left: 28px;
+  padding-right: 32px;
   padding-top: 65px;
 }
 
@@ -58,6 +59,10 @@
     text-decoration: none;
     color: #1B2D37;
     opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .page-footer__list-first {
@@ -66,7 +71,7 @@
 }
 
 .page-footer__contacts {
-  margin-left: 15%;
+  margin-left: auto;
 
   h3 {
     padding: 0;
@@ -104,6 +109,10 @@
     color: #1B2D37;
     opacity: 0.5;
   }
+
+  a:hover {
+    opacity: 1;
+  }
 }
 
 .page-footer__bottom {
@@ -111,19 +120,20 @@
 
   p {
     display: flex;
-    max-width: 1415px;
+    max-width: 1413px;
     min-width: 320px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding-left: 28px;
-    padding-right: 28px;
+    padding-right: 30px;
     padding-top: 13px;
     padding-bottom: 14px;
     vertical-align: middle;
   }
 
-  a {
+  a,
+  span {
     font-family: "PT Mono", "Times New Roman", serif;
     font-style: normal;
     font-weight: normal;
@@ -134,6 +144,10 @@
     text-transform: uppercase;
     text-decoration: none;
     opacity: 0.5;
+  }
+
+  a:hover {
+    opacity: 1;
   }
 
   .page-footer__low {

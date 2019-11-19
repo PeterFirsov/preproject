@@ -1,7 +1,6 @@
 .button {
   display: block;
   min-width: 180px;
-  height: 45px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -12,7 +11,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   padding-top: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -23,7 +22,7 @@
 
 .button:hover {
   color: #ffffff;
-  background-color: #444444;
+  background-color: #0d648a;
 }
 
 .button:active {
@@ -32,11 +31,10 @@
 
 .button--representation {
   width: 406px;
-  height: 54px;
   font-size: 16px;
   line-height: 19px;
   padding-top: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 19px;
   border: 1px solid #00B2FF;
   background-color: #00B2FF;
 }
@@ -44,12 +42,11 @@
 .button--about-us,
 .button--question-form {
   width: 180px;
-  height: 45px;
   font-size: 14px;
   line-height: 16px;
   color: #00B2FF;
   padding-top: 15px;
-  padding-bottom: 9px;
+  padding-bottom: 14px;
   border: 1px solid #00B2FF;
   background-color: transparent;
 }
@@ -57,7 +54,6 @@
 .button--question-form {
   width: 270px;
   padding-top: 12px;
-  padding-bottom: 12px;
   color: #ffffff;
   border: 1px solid #ffffff;
 }

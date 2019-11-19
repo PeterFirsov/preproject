@@ -1,19 +1,27 @@
 .question-form {
   width: auto;
   background-color: #00B2FF;
-  background-image: url("../img/airplane.png"), url("../img/twintrangle.png");
+  background-image: url("../img/airplane@1x.png"), url("../img/twintrangle@1x.png");
   background-repeat: no-repeat;
   background-position: right calc(50% + 355px) top 42.5%, right calc(50% + 450px) top 48%;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .question-form {
+    background-image: url("../img/airplane@2x.png"), url("../img/twintrangle@2x.png");
+    background-size: 511px auto, 670px auto;
+  }
 }
 
 .question-form__wrapper {
   max-width: 1171px;
   min-width: 320px;
-  min-height: 580px;
+  min-height: 550px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
   padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 .question-form__content {
@@ -74,6 +82,10 @@
     &::placeholder {
       color: #FFFFFF;
     }
+
+    &:hover {
+      background-color: #0d648a;
+    }
   }
 }
 
@@ -95,6 +107,15 @@
     background-color: #19baff;
     box-sizing: border-box;
     resize: vertical;
+    overflow: auto;
+
+    &::placeholder {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      background-color: #0d648a;
+    }
   }
 }
 
@@ -109,6 +130,11 @@
   font-size: 14px;
   line-height: 16px;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover > .question-form__check-indicator {
+    background-color: #0d648a;
+  }
 }
 
 .question-form__check-indicator {
@@ -149,4 +175,8 @@
 .question-form__checkbox:checked + .question-form__check-indicator::before,
 .question-form__checkbox:checked + .question-form__check-indicator::after {
   display: block;
+}
+
+.question-form__checkbox:focus + .question-form__check-indicator {
+  outline: 2px solid #0d648a;
 }

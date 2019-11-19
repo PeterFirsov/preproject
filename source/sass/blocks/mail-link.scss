@@ -11,6 +11,10 @@
   text-decoration: none;
   color: #ffffff;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   &::before {
     content: "";
     position: absolute;

@@ -10,16 +10,22 @@
   line-height: 18px;
   text-decoration: none;
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/phone-call.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.phone-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/phone-call.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+

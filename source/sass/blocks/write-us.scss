@@ -1,0 +1,19 @@
+.write-us {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.write-us__wrapper {
+  position: fixed;
+  top: 136px;
+  left: calc(50% - 245px);
+  max-width: 490px;
+  height: 605px;
+  background-color: #00B2FF;
+}
