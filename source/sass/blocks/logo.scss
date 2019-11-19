@@ -7,8 +7,10 @@
 
 .logo p {
   position: absolute;
-  top: -20px;
+  top: 6px;
   left: 67px;
+  margin: 0;
+  padding: 0;
   font-size: 25px;
   line-height: 29px;
   color: #ffffff;
@@ -24,4 +26,13 @@
   font-size: 12px;
   line-height: 14px;
   color: #788891;
+}
+
+.logo--footer {
+  width: 222px;
+}
+
+.logo--footer p,
+.logo--footer span {
+  color: #000000;
 }

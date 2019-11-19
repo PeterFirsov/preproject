@@ -40,3 +40,24 @@
   border: 1px solid #00B2FF;
   background-color: #00B2FF;
 }
+
+.button--about-us,
+.button--question-form {
+  width: 180px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00B2FF;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  border: 1px solid #00B2FF;
+  background-color: transparent;
+}
+
+.button--question-form {
+  width: 270px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

@@ -8,17 +8,8 @@
   background-color: #1B2D37;
   background-image: url("../img/background.png"), url("../img/plates.png"), url("../img/twintrangle.png");
   background-repeat: no-repeat;
-  background-position: center top, 1350px 258px, 1342px 118px;
+  background-position: center top, right 26.5% bottom 29%, right 28.3% bottom 31.7%;
   box-sizing: border-box;
-
-  img {
-    position: absolute;
-    top: 259px;
-    right: 176px;
-    z-index: 1;
-    width: 705px;
-    height: 515px;
-  }
 }
 
 .representation__header {
