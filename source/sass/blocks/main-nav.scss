@@ -32,4 +32,17 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .main-nav__button {
+    width: 37px;
+    height: 37px;
 
+    &::before {
+      top: 9px;
+    }
+
+    &::after {
+      bottom: 15px;
+    }
+  }
+}

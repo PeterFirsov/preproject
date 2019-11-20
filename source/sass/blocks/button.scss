@@ -29,31 +29,62 @@
   color: #7c7c7c;
 }
 
-.button--representation {
+.button--wide {
   width: 406px;
   font-size: 16px;
   line-height: 19px;
   padding-top: 16px;
   padding-bottom: 19px;
-  border: 1px solid #00B2FF;
-  background-color: #00B2FF;
+  border: 1px solid #00b2ff;
+  background-color: #00b2ff;
 }
 
-.button--about-us,
-.button--question-form {
+.button--sized {
   width: 180px;
   font-size: 14px;
   line-height: 16px;
-  color: #00B2FF;
+  color: #00b2ff;
   padding-top: 15px;
   padding-bottom: 14px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   background-color: transparent;
 }
 
-.button--question-form {
+.button--sized-color {
   width: 270px;
   padding-top: 12px;
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+.button--popup-wide {
+  width: 100%;
+  font-size: 13px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+  .button--wide {
+    width: 378px;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border: 1px solid #00b2ff;
+    background-color: #00b2ff;
+  }
+
+  .button--sized {
+    margin-left: 3px;
+  }
+
+  .button--sized-color {
+    width: 280px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-left: 0;
+  }
 }

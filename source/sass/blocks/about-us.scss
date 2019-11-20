@@ -58,3 +58,55 @@
     background-size: 220px auto;
   }
 }
+
+@media (max-width: 1023px) {
+  .about-us {
+    position: relative;
+    top: -32px;
+  }
+
+  .about-us__wrapper {
+    max-width: 770px;
+    margin-bottom: 5px;
+    padding: 0 30px;
+  }
+
+  .about-us__content {
+    max-width: 720px;
+    min-height: 400px;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 180px;
+    background-position: -38px 2px;
+    background-size: 251px 361px;
+
+    h2 {
+      margin-bottom: 21px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 32px;
+      line-height: 51px;
+      font-style: normal;
+      font-weight: normal;
+      color: #666666;
+    }
+
+    p {
+      max-width: auto;
+      height: 195px;
+      margin-bottom: 42px;
+      padding-left: 3px;
+      font-family: "PT Mono", "Times New Roman", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #666666;
+      white-space: pre-wrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 9; /* количество строк */
+      -webkit-box-orient: vertical;
+    }
+  }
+}

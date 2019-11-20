@@ -34,8 +34,8 @@
     padding-top: 95px;
     padding-left: 42px;
     padding-right: 44px;
-    border: 1px solid #EBEBEB;
-    border-left: 3px solid #00B2FF;
+    border: 1px solid #ebebeb;
+    border-left: 3px solid #00b2ff;
     box-sizing: border-box;
 
     &:nth-child(2n) {
@@ -66,11 +66,11 @@
       font-style: normal;
       font-weight: normal;
       line-height: 34px;
-      color: #00B2FF;
+      color: #00b2ff;
     }
 
     &:hover {
-      background-color: #00B2FF;
+      background-color: #00b2ff;
 
       svg {
         fill: #ffffff;
@@ -82,6 +82,56 @@
 
       h3 {
         color: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .features {
+    position: relative;
+    top: -55px;
+  }
+
+  .features__wrapper {
+    max-width: 770px;
+    min-width: 320px;
+    padding: 0 25px;
+    padding-top: 25px;
+
+    ul {
+      max-width: 720px;
+      min-width: 320px;
+    }
+
+    li {
+      flex-basis: 200px;
+      min-height: 230px;
+      margin-bottom: 30px;
+      padding-top: 65px;
+      padding-left: 25px;
+      padding-right: 20px;
+
+      &:nth-child(2n) {
+        margin-left: 30px;
+      }
+
+      svg {
+        position: absolute;
+        top: 21px;
+        left: 23px;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        line-height: 22px;
+      }
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
       }
     }
   }

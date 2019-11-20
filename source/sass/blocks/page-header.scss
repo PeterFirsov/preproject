@@ -1,9 +1,26 @@
 .page-header {
   position: relative;
   width: auto;
-  height: 85px;
+  min-height: 85px;
   padding-top: 33px;
   z-index: 1;
   box-sizing: border-box;
 }
 
+@media (max-width: 1023px) {
+  .page-header {
+    min-height: 85px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    position: relative;
+    width: auto;
+    min-height: 85px;
+    padding-top: 33px;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+}

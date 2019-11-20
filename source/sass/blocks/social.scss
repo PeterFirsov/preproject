@@ -16,7 +16,21 @@
     display: block;
 
     &:hover svg {
-      fill: #00B2FF;
+      fill: #00b2ff;
     }
+  }
+}
+
+@media (max-width: 1023px) {
+  .social {
+    display: flex;
+    position: relative;
+    top: 11px;
+    flex-wrap: wrap;
+    width: 115px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
   }
 }

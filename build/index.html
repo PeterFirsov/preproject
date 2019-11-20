@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a class="logo" href="#">
+      <a class="header-top__logo logo" href="#">
         <img src="img/logo.svg" width="52" height="52" alt="Логотип Smart Device">
         <p>Smart Device</p>
         <span>умные технологии</span>
@@ -21,7 +21,7 @@
       <a class="header-top__mail mail-link" href="mailto:info@sd.ru">info@sd.ru</a>
       <a class="header-top__phone phone-link" href="tel:+74950005252">+7 (495) 000 52 52</a>
       <div class="header-top__button">
-        <a class="button" href="#">Заказать звонок</a>
+        <a class="button header-top__open" href="#">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -32,7 +32,7 @@
         <h2 class="visually-hidden">На чем специализируется наше предприятие</h2>
         <b>Печатные платы</b>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="representation__button button button--representation" href="#">Получить бесплатную консультацию</a>
+        <a class="representation__button button button--wide" href="#">Получить бесплатную консультацию</a>
         <a class="representation__link" href="#">Скролл вниз</a>
       </header>
     </section>
@@ -85,7 +85,7 @@
               <path d="M9.98812 19.6269C9.86104 19.4998 9.68528 19.4266 9.50488 19.4266C9.3251 19.4266 9.14941 19.4998 9.02158 19.6269C8.89443 19.7541 8.82129 19.9305 8.82129 20.111C8.82129 20.2908 8.89437 20.4672 9.02158 20.5944C9.14873 20.7215 9.3251 20.7947 9.50488 20.7947C9.68535 20.7947 9.86104 20.7215 9.98812 20.5944C10.1159 20.4665 10.1891 20.2908 10.1891 20.111C10.1891 19.9305 10.1159 19.7548 9.98812 19.6269Z"></path>
             </svg>
             <h3>Персонализация стоимости</h3>
-            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
             </p>
           </li>
         </ul>
@@ -98,7 +98,7 @@
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
 
 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <a class="button button--about-us" href="#">Подробнее</a>
+          <a class="button button--sized" href="#">Подробнее</a>
         </div>
       </div>
     </section>
@@ -109,19 +109,28 @@
           <li>
             <a href="#">
               <h3>Производство печатных плат</h3>
-              <img src="img/plate@1x.png" srcset="img/plate@2x.png 2x" width="416" height="627" alt="Печатная плата">
+              <picture>
+                <source media="(max-width:1023px)" srcset="img/plate-tablet@1x.png 1x, img/plate-tablet@2x.png 2x">
+                <img src="img/plate@1x.png" srcset="img/plate@2x.png 2x" width="416" height="627" alt="Печатная плата">
+              </picture>
             </a>
           </li>
           <li>
             <a href="#">
               <h3>Монтаж печатных плат</h3>
-              <img src="img/set@1x.png" srcset="img/set@2x.png 2x" width="1112" height="675" alt="установка печатной платы">
+              <picture>
+                <source media="(max-width:1023px)" srcset="img/set-tablet@1x.png 1x, img/set-tablet@2x.png 2x">
+                <img src="img/set@1x.png" srcset="img/set@2x.png 2x" width="1112" height="675" alt="установка печатной платы">
+              </picture>
             </a>
           </li>
           <li>
             <a href="#">
               <h3>Комплектующие для светотехники</h3>
-              <img src="img/light@1x.png" srcset="img/light@2x.png 2x" width="620" height="620" alt="Светотехника">
+              <picture>
+                <source media="(max-width:1023px)" srcset="img/light-tablet@1x.png 1x, img/light-tablet@2x.png 2x">
+                <img src="img/light@1x.png" srcset="img/light@2x.png 2x" width="620" height="620" alt="Светотехника">
+              </picture>
             </a>
           </li>
         </ul>
@@ -135,17 +144,17 @@
           <span>Мы проконсультируем Вас бесплатно</span>
           <form class="question-form__form" action="#" method="POST">
             <div class="question-form__name">
-              <input type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+              <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
             </div>
             <div class="question-form__phone">
-              <input type="tel" placeholder="Телефон">
+              <input type="tel" name="tel" placeholder="Телефон">
             </div>
             <div class="question-form__question">
-              <textarea placeholder="Ваш вопрос"></textarea>
+              <textarea name="question" placeholder="Ваш вопрос"></textarea>
             </div>
-            <button class="question-form__button button button--question-form" type="submit">Задать вопрос</button>
+            <button class="question-form__button button button--sized button--sized-color" type="submit">Задать вопрос</button>
             <label class="question-form__check">
-              <input class="question-form__checkbox visually-hidden" type="checkbox" name="personal_check">
+              <input class="question-form__checkbox visually-hidden" type="checkbox" name="personal_check" required="">
               <span class="question-form__check-indicator"></span>
               Я согласен на обработку  персональных данных
             </label>
@@ -162,6 +171,7 @@
           <p>Service Device</p>
           <span>умные технологии</span>
         </a>
+        <b>1999-2018 SD Service Devices</b>
         <ul class="social">
           <li>
             <a href="#" aria-label="Фэйсбук">
@@ -244,34 +254,24 @@
       </p>
     </div>
   </footer>
-
   <section class="write-us">
     <div class="write-us__wrapper">
-      <h2 class="visually-hidden">Форма для обратной связи</h2>
-      <button class="modal-close" type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
-        <div class="write-us-name">
-          <label for="your-name">Ваше имя:</label>
-          <input class="pole" type="text" name="name" id="your-name" placeholder="Имя Фамилия" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
-        </div>
-        <div class="write-us-mail">
-          <label for="your-mail">Ваш e-mail:</label>
-          <input class="pole" type="email" name="email" id="your-mail" placeholder="email@example.com" pattern="^[0-9a-zA-Z\s\D]+$">
-        </div>
-        <div class="write-us-letter">
-          <label for="letter">Текст письма:</label>
-          <textarea name="your-letter" id="letter">В свободной форме
-          </textarea>
-        </div>
-        <button class="button" type="submit">Отправить</button>
-        <label class="question-form__check">
-            <input class="question-form__checkbox visually-hidden" type="checkbox" name="personal_check">
-            <span class="question-form__check-indicator"></span>
-            Я согласен на обработку  персональных данных
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <button class="write-us__close" type="button">Закрыть</button>
+      <form action="#" method="POST" class="write-us-form">
+        <input autofocus="" type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <textarea name="your-letter" placeholder="Ваш вопрос"></textarea>
+        <button class="button button--popup-wide" type="submit">Отправить</button>
+        <label class="write-us__check">
+          <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check">
+          <span class="write-us__check-indicator"></span>
+          Я согласен на обработку  персональных данных
         </label>
       </form>
     </div>
   </section>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

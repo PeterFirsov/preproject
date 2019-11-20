@@ -28,4 +28,19 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .phone-link {
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    padding-left: 0;
 
+    &::before {
+      top: -5px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .goods {
   width: auto;
-  background-color: #1B2D37;
+  background-color: #1b2d37;
 }
 
 .goods__wrapper {
@@ -11,7 +11,7 @@
   margin-right: auto;
   padding: 0 30px;
   padding-top: 88px;
-  background-color: #1B2D37;
+  background-color: #1b2d37;
 
   h2 {
     margin: 0;
@@ -22,7 +22,7 @@
     line-height: 51px;
     font-style: normal;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   ul {
@@ -43,7 +43,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
-    background-color: #1B2D37;
+    background-color: #1b2d37;
     box-sizing: border-box;
     overflow: hidden;
 
@@ -71,14 +71,14 @@
         z-index: 1;
         width: 63px;
         height: 63px;
-        background-color: #00B2FF;
+        background-color: #00b2ff;
         background-image: url("../img/arrow.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
 
-      &:hover {
-        border: 1px solid #00B2FF;
+      &:hover img {
+        opacity: 0.4;
       }
     }
 
@@ -91,7 +91,7 @@
       line-height: 30px;
       font-style: normal;
       font-weight: normal;
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     img {
@@ -106,3 +106,71 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .goods__wrapper {
+    max-width: 720px;
+    min-width: 320px;
+    min-height: 1080px;
+    padding: 0 25px;
+    padding-top: 48px;
+
+    h2 {
+      max-width: 610px;
+      margin-bottom: 47px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 32px;
+      line-height: 48px;
+      font-style: normal;
+      font-weight: normal;
+      color: #ffffff;
+    }
+
+    ul {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      max-width: 715px;
+      min-width: 320px;
+
+      li {
+        position: relative;
+        min-height: 256px;
+        margin-bottom: 47px;
+
+        &:nth-child(3n+2) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          min-height: 256px;
+          padding-top: 20px;
+          padding-left: 45px;
+          padding-right: 44px;
+
+          &::before {
+            z-index: 1;
+            width: 61px;
+            background-position: calc(50% + 3px);
+          }
+        }
+
+        h3 {
+          max-width: 165px;
+          font-family: "Roboto Condensed", "Arial", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          font-style: normal;
+          font-weight: normal;
+          color: #ffffff;
+        }
+
+        img {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}
