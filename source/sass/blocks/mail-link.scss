@@ -44,3 +44,11 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .mail-link {
+    &::before {
+      top: -11px;
+    }
+  }
+}

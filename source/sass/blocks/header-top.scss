@@ -60,3 +60,24 @@
     margin-left: 4.5%;
   }
 }
+
+@media (max-width: 767px) {
+  .header-top {
+    display: flex;
+    max-width: 320px;
+    min-width: none;
+    min-height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 17px;
+    box-sizing: border-box;
+  }
+
+  .header-top__mail {
+    margin-left: 9.2%;
+  }
+
+  .header-top__phone {
+    margin-left: 7%;
+  }
+}

@@ -46,3 +46,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .main-nav__button {
+    height: 30px;
+
+    &::before {
+      top: 2px;
+    }
+  }
+}

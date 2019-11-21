@@ -8,7 +8,7 @@
   background-color: #1b2d37;
   background-image: url("../img/background@1x.png"), url("../img/plates@1x.png"), url("../img/twintrangle@1x.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%, auto, auto;
+  background-size: cover, auto, auto;
   background-position: center top, left calc(50% + 430px) bottom 29%, left calc(50% + 405px) bottom 31.7%;
   box-sizing: border-box;
 }
@@ -150,5 +150,61 @@
 
   .representation__button {
     margin-left: 115px;
+  }
+}
+
+@media (max-width: 767px) {
+  .representation {
+    top: -85px;
+    z-index: 0;
+    min-height: 663px;
+    padding-top: 303px;
+    background-size: 100% 100%, 301px auto, 505px auto;
+    background-position: center top, left calc(50% + 18px) bottom 75.5%, left calc(50% + 245px) bottom 73%;
+    box-sizing: border-box;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .representation {
+      background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
+      background-size: 2249px auto, 707px auto, 670px auto;
+    }
+  }
+
+  .representation__header {
+    max-width: 320px;
+    min-width: 320px;
+    padding: 0 17px;
+    z-index: 2;
+    box-sizing: border-box;
+
+    .representation__link {
+      display: none;
+    }
+
+    b {
+      width: 240px;
+      margin-bottom: 28px;
+      padding-left: 0;
+      font-size: 40px;
+      line-height: 47px;
+    }
+
+    p {
+      max-width: 280px;
+      margin-bottom: 40px;
+      padding-left: 50px;
+      font-size: 16px;
+      line-height: 25px;
+
+      &::before {
+        top: 15px;
+        left: 2px;
+      }
+    }
+  }
+
+  .representation__button {
+    margin-left: 2px;
   }
 }

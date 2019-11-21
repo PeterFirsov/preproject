@@ -44,3 +44,11 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .phone-link {
+    &::before {
+      top: -12px;
+    }
+  }
+}

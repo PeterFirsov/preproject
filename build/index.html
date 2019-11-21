@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Основная страница предприятия Smart Device">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -32,13 +33,14 @@
         <h2 class="visually-hidden">На чем специализируется наше предприятие</h2>
         <b>Печатные платы</b>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="representation__button button button--wide" href="#">Получить бесплатную консультацию</a>
-        <a class="representation__link" href="#">Скролл вниз</a>
+        <a class="representation__button button button--wide" href="#question"><span>Получить</span> бесплатн<i>ая</i><span>ую</span> консультаци<i>я</i><span>ю</span></a>
+        <a class="representation__link" href="#features">Скролл вниз</a>
       </header>
     </section>
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="features__wrapper">
+        <a name="features"></a>
         <ul>
           <li>
             <svg width="29" height="35" viewBox="0 0 29 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +50,7 @@
               <path d="M14.5 11.7578C14.1188 11.7578 13.8095 11.4515 13.8095 11.0742C13.8095 10.6969 14.1188 10.3906 14.5 10.3906C14.8811 10.3906 15.1904 10.6969 15.1904 11.0742C15.1904 11.4515 14.8811 11.7578 14.5 11.7578Z"></path>
             </svg>
             <h3>Оперативные сроки</h3>
-            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
+            <p>Усовершенствованная логистическая система позволяет нам  просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
             </p>
           </li>
           <li>
@@ -110,6 +112,7 @@
             <a href="#">
               <h3>Производство печатных плат</h3>
               <picture>
+                <source media="(max-width:767px)" srcset="img/plate-mobile@1x.png 1x, img/plate-mobile@2x.png 2x">
                 <source media="(max-width:1023px)" srcset="img/plate-tablet@1x.png 1x, img/plate-tablet@2x.png 2x">
                 <img src="img/plate@1x.png" srcset="img/plate@2x.png 2x" width="416" height="627" alt="Печатная плата">
               </picture>
@@ -119,6 +122,7 @@
             <a href="#">
               <h3>Монтаж печатных плат</h3>
               <picture>
+                <source media="(max-width:767px)" srcset="img/set-mobile@1x.png 1x, img/set-mobile@2x.png 2x">
                 <source media="(max-width:1023px)" srcset="img/set-tablet@1x.png 1x, img/set-tablet@2x.png 2x">
                 <img src="img/set@1x.png" srcset="img/set@2x.png 2x" width="1112" height="675" alt="установка печатной платы">
               </picture>
@@ -128,6 +132,7 @@
             <a href="#">
               <h3>Комплектующие для светотехники</h3>
               <picture>
+                <source media="(max-width:767px)" srcset="img/light-mobile@1x.png 1x, img/light-mobile@2x.png 2x">
                 <source media="(max-width:1023px)" srcset="img/light-tablet@1x.png 1x, img/light-tablet@2x.png 2x">
                 <img src="img/light@1x.png" srcset="img/light@2x.png 2x" width="620" height="620" alt="Светотехника">
               </picture>
@@ -137,6 +142,7 @@
       </div>
     </section>
     <section class="question-form">
+      <a name="question"></a>
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="question-form__wrapper">
         <div class="question-form__content">
@@ -144,13 +150,13 @@
           <span>Мы проконсультируем Вас бесплатно</span>
           <form class="question-form__form" action="#" method="POST">
             <div class="question-form__name">
-              <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+              <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required="">
             </div>
             <div class="question-form__phone">
-              <input type="tel" name="tel" placeholder="Телефон">
+              <input type="tel" name="tel" placeholder="Телефон" required="">
             </div>
             <div class="question-form__question">
-              <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              <textarea name="question" placeholder="Ваш вопрос" required=""></textarea>
             </div>
             <button class="question-form__button button button--sized button--sized-color" type="submit">Задать вопрос</button>
             <label class="question-form__check">
@@ -198,7 +204,7 @@
         </ul>
       </div>
       <div class="page-footer__nav">
-        <h3>Разделы сайта</h3>
+        <h3 class="page-footer--minus">Разделы сайта</h3>
         <div class="page-footer__nav-wrapper">
           <ul class="page-footer__list-first">
             <li>
@@ -228,8 +234,8 @@
         </div>
       </div>
       <div class="page-footer__contacts">
-        <h3>Наш офис</h3>
-        <ul>
+        <h3 class="page-footer--minus">Наш офис</h3>
+        <ul class="page-footer__coords">
           <li>
             <span>г. Мытищи, Олимпийский проспект, д.10</span>
           </li>
@@ -259,13 +265,13 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <button class="write-us__close" type="button">Закрыть</button>
-      <form action="#" method="POST" class="write-us-form">
-        <input autofocus="" type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
-        <input type="tel" name="phone" placeholder="Телефон">
-        <textarea name="your-letter" placeholder="Ваш вопрос"></textarea>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
+        <input autofocus="" type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required="">
+        <input type="tel" name="phone" placeholder="Телефон" required="">
+        <textarea name="letter" placeholder="Ваш вопрос" required=""></textarea>
         <button class="button button--popup-wide" type="submit">Отправить</button>
         <label class="write-us__check">
-          <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check">
+          <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check" required="">
           <span class="write-us__check-indicator"></span>
           Я согласен на обработку  персональных данных
         </label>

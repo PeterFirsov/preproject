@@ -15,7 +15,7 @@
 
 .write-us__wrapper {
   position: fixed;
-  top: 124px;
+  top: calc(50% - 290px);
   left: calc(50% - 245px);
   width: 444px;
   min-height: 550px;
@@ -68,6 +68,7 @@
     border: 1px solid #19baff;
     background-color: #19baff;
     box-sizing: border-box;
+    resize: none;
 
     &::placeholder {
       color: #ffffff;
@@ -84,10 +85,9 @@
   }
 
   textarea {
-    min-height: 94px;
+    height: 94px;
     padding-top: 9px;
     margin-bottom: 24px;
-    resize: vertical;
     overflow: auto;
   }
 }
@@ -168,6 +168,11 @@
 
   &:focus{
     outline: 1px solid #0d648a;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #0d648a;
   }
 }
 

@@ -3,10 +3,27 @@ var open = document.querySelector('.header-top__open');
 var popup = document.querySelector('.write-us');
 var close = document.querySelector('.write-us__close');
 
-var questForm = document.querySelector('.question-form__form');
-var name = questForm.querySelector('[name=name]');
-var tel = questForm.querySelector('[name=tel]');
-var question = questForm.querySelector('[name=question]');
+var questForm = document.querySelector('.write-us-form');
+var you = questForm.querySelector('[name=name]');
+var phone = questForm.querySelector('[name=phone]');
+var question = questForm.querySelector('[name=letter]');
+
+var navOpener = document.querySelector('.page-footer__nav h3');
+var contOpener = document.querySelector('.page-footer__contacts h3');
+var list = document.querySelector('.page-footer__nav-wrapper');
+var contacts = document.querySelector('.page-footer__coords');
+
+navOpener.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  list.classList.toggle('page-footer--close');
+  navOpener.classList.toggle('page-footer--plus');
+});
+
+contOpener.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  contacts.classList.toggle('page-footer--close');
+  contOpener.classList.toggle('page-footer--plus');
+});
 
 var isStorageSupport = true;
 var storage = '';
@@ -20,11 +37,13 @@ try {
 open.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.add('write-us--show');
+  document.body.style.overflow = 'hidden';
 });
 
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('write-us--show');
+  document.body.style.overflow = '';
 });
 
 window.addEventListener('keydown', function (evt) {
@@ -32,6 +51,19 @@ window.addEventListener('keydown', function (evt) {
     if (popup.classList.contains('write-us--show')) {
       evt.preventDefault();
       popup.classList.remove('write-us--show');
+      document.body.style.overflow = '';
+    }
+  }
+});
+
+questForm.addEventListener('submit', function (evt) {
+  if (!you.value || !phone.value || !question.value) {
+    evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('name', you.value);
+      localStorage.setItem('phone', phone.value);
+      localStorage.setItem('letter', question.value);
     }
   }
 });
@@ -50,18 +82,34 @@ window.addEventListener('keydown', function (evt) {
 popup.addEventListener('mouseup', function (evt) {
   if (evt.target.closest('.write-us__wrapper') === null) {
     popup.classList.remove('write-us--show');
+    document.body.style.overflow = '';
   }
 });
 
 
-questForm.addEventListener('submit', function (evt) {
-  if (!name.value || !tel.value || !question.value) {
-    evt.preventDefault();
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('name', name.value);
-      localStorage.setItem('tel', tel.value);
-      localStorage.setItem('question', question.value);
+phone.addEventListener('keydown', function (event) {
+  if (!(event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === 'Backspace' || event.key === 'Tab')) {
+    event.preventDefault();
+  }
+  var mask = '+7 (111) 111-11-11'; // Задаем маску
+
+  if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+    // Здесь начинаем сравнивать this.value и mask
+    // к примеру опять же
+    var currentString = phone.value;
+    var currentLength = currentString.length;
+    if (/[0-9]/.test(event.key)) {
+      if (mask[currentLength] === '1') {
+        phone.value = currentString + event.key;
+      } else {
+        for (var i = currentLength; i < mask.length; i++) {
+          if (mask[i] === '1') {
+            phone.value = currentString + event.key;
+            break;
+          }
+          currentString += mask[i];
+        }
+      }
     }
   }
 });
