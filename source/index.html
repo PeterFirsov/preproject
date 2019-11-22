@@ -272,9 +272,15 @@
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <button class="write-us__close" type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
-        <input autofocus type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required>
-        <input type="tel" name="phone" placeholder="Телефон" required>
-        <textarea name="letter" placeholder="Ваш вопрос" required></textarea>
+        <label>
+          <input autofocus type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required>
+        </label>
+        <label>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+        </label>
+        <label>
+          <textarea name="letter" placeholder="Ваш вопрос" required></textarea>
+        </label>
         <button class="button button--popup-wide" type="submit">Отправить</button>
         <label class="write-us__check">
           <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check" required>
