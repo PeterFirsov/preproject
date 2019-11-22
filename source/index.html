@@ -150,13 +150,19 @@
           <span>Мы проконсультируем Вас бесплатно</span>
           <form class="question-form__form" action="#" method="POST">
             <div class="question-form__name">
-              <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required>
+              <label>
+                <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required>
+              </label>
             </div>
             <div class="question-form__phone">
-              <input type="tel" name="tel" placeholder="Телефон" required>
+              <label>
+                <input type="tel" name="tel" placeholder="Телефон" required>
+              </label>
             </div>
             <div class="question-form__question">
-              <textarea name="question" placeholder="Ваш вопрос" required></textarea>
+              <label>
+                <textarea name="question" placeholder="Ваш вопрос" required></textarea>
+              </label>
             </div>
             <button class="question-form__button button button--sized button--sized-color" type="submit">Задать вопрос</button>
             <label class="question-form__check">
