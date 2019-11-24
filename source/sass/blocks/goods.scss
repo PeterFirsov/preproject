@@ -37,7 +37,7 @@
     background-image: url("../img/plate@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .goods__plates {
@@ -51,7 +51,7 @@
     background-image: url("../img/set@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .goods__set {
@@ -65,7 +65,7 @@
     background-image: url("../img/light@1x.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .goods__light {
