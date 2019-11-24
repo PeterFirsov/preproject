@@ -3,6 +3,12 @@
   position: relative;
   width: 202px;
   height: 52px;
+
+  &:hover img,
+  &:hover p,
+  &:hover span {
+    opacity: 0.6;
+  }
 }
 
 .logo p {
@@ -45,12 +51,6 @@
     width: 41px;
     height: 41px;
 
-    &:hover img,
-    &:hover p,
-    &:hover span {
-      opacity: 0.6;
-    }
-
     img {
       width: 38px;
       height: 38px;
@@ -84,6 +84,4 @@
       color: #000000;
     }
   }
-
-
 }

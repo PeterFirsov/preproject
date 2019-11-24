@@ -115,7 +115,7 @@
   display: block;
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 0;
   width: 14px;
   height: 14px;
   border: 1px solid #ffffff;
@@ -161,12 +161,12 @@
   top: 17px;
   width: 20px;
   height: 20px;
-  font-size: 0px;
+  font-size: 0;
   cursor: pointer;
   background-color: transparent;
   border: none;
 
-  &:focus{
+  &:focus {
     outline: 1px solid #0d648a;
   }
 

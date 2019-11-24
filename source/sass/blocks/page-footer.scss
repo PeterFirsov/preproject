@@ -6,7 +6,6 @@
 .page-footer__wrapper {
   display: flex;
   max-width: 1411px;
-  min-width: 320px;
   min-height: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -185,14 +184,13 @@
   .page-footer__wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 724px;
-    min-width: 320px;
+    max-width: 100%;
     min-height: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 39px;
-    padding-left: 29px;
-    padding-right: 25px;
+    padding-left: 26px;
+    padding-right: 21px;
     padding-top: 19px;
   }
 
@@ -319,7 +317,7 @@
     min-height: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 29px;
+    margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 45px;
@@ -345,7 +343,6 @@
   .page-footer__nav {
     padding-left: 13px;
     padding-right: 13px;
-    border-top: 1px solid #dddddd;
 
     h3 {
       position: relative;
@@ -354,7 +351,7 @@
       padding-top: 30px;
       padding-bottom: 26px;
       margin: 0;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       cursor: pointer;
 
       &:hover {
@@ -364,9 +361,9 @@
       &::before {
         content: "";
         position: absolute;
-        left: -15px;
-        bottom: 0;
-        width: 320px;
+        left: -80%;
+        top: 0;
+        width: 800px;
         height: 1px;
         background-color: #dddddd;
       }
@@ -377,6 +374,7 @@
     margin-top: 6px;
     max-width: none;
     width: 100%;
+    margin-bottom: 26px;
   }
 
   .page-footer__contacts {
@@ -391,9 +389,8 @@
       padding-top: 29px;
       padding-bottom: 26px;
       margin: 0;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       cursor: pointer;
-      border-top: 1px solid #dddddd;
 
       &:hover {
         color: #00b2ff;
@@ -402,9 +399,9 @@
       &::before {
         content: "";
         position: absolute;
-        left: -15px;
-        bottom: 0;
-        width: 320px;
+        left: -80%;
+        top: 0;
+        width: 800px;
         height: 1px;
         background-color: #dddddd;
       }
@@ -415,6 +412,7 @@
       margin: 0;
       margin-top: 6px;
       margin-left: 0;
+      margin-bottom: 26px;
 
       li {
         width: 270px;
@@ -429,8 +427,7 @@
     p {
       display: flex;
       flex-direction: column;
-      max-width: 320px;
-      min-width: 320px;
+      max-width: 100%;
       margin: 0;
       margin-left: auto;
       margin-right: auto;
@@ -450,13 +447,13 @@
   }
 
   .page-footer--minus {
-    background-image: url('../img/minus.svg');
+    background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
     background-position: center right;
   }
 
   .page-footer--plus {
-    background-image: url('../img/plus.svg');
+    background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     background-position: center right;
   }

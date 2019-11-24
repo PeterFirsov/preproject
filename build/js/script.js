@@ -8,6 +8,8 @@ var you = questForm.querySelector('[name=name]');
 var phone = questForm.querySelector('[name=phone]');
 var question = questForm.querySelector('[name=letter]');
 
+var mainPhone = document.querySelector('input[type=tel]');
+
 var navOpener = document.querySelector('.page-footer__nav h3');
 var contOpener = document.querySelector('.page-footer__contacts h3');
 var list = document.querySelector('.page-footer__nav-wrapper');
@@ -105,6 +107,33 @@ phone.addEventListener('keydown', function (event) {
         for (var i = currentLength; i < mask.length; i++) {
           if (mask[i] === '1') {
             phone.value = currentString + event.key;
+            break;
+          }
+          currentString += mask[i];
+        }
+      }
+    }
+  }
+});
+
+mainPhone.addEventListener('keydown', function (event) {
+  if (!(event.key === 'ArrowLeft' || event.key === 'ArrowRight' || event.key === 'Backspace' || event.key === 'Tab')) {
+    event.preventDefault();
+  }
+  var mask = '+7 (111) 111-11-11'; // Задаем маску
+
+  if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+    // Здесь начинаем сравнивать this.value и mask
+    // к примеру опять же
+    var currentString = mainPhone.value;
+    var currentLength = currentString.length;
+    if (/[0-9]/.test(event.key)) {
+      if (mask[currentLength] === '1') {
+        mainPhone.value = currentString + event.key;
+      } else {
+        for (var i = currentLength; i < mask.length; i++) {
+          if (mask[i] === '1') {
+            mainPhone.value = currentString + event.key;
             break;
           }
           currentString += mask[i];

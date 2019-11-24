@@ -1,29 +1,16 @@
 .representation {
   position: relative;
-  top: -85px;
-  z-index: 0;
+  top: 0;
+  z-index: -1;
   width: auto;
-  min-height: 878px;
-  padding-top: 315px;
-  background-color: #1b2d37;
-  background-image: url("../img/background@1x.png"), url("../img/plates@1x.png"), url("../img/twintrangle@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover, auto, auto;
-  background-position: center top, left calc(50% + 430px) bottom 29%, left calc(50% + 405px) bottom 31.7%;
+  min-height: 794px;
+  padding-top: 230px;
   box-sizing: border-box;
-}
-
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .representation {
-    background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
-    background-size: 2249px auto, 707px auto, 670px auto;
-  }
 }
 
 .representation__header {
   position: relative;
   max-width: 1420px;
-  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
@@ -95,25 +82,15 @@
 
 @media (max-width: 1023px) {
   .representation {
-    top: -85px;
+    top: 0;
     z-index: 0;
-    min-height: 686px;
-    padding-top: 189px;
-    background-size: 100% 100%, 468px auto, 528px auto;
-    background-position: center top, left calc(50% + 358px) bottom 67.5%, left calc(50% + 320px) bottom 75%;
+    min-height: 614px;
+    padding-top: 117px;
     box-sizing: border-box;
   }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .representation {
-      background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
-      background-size: 2249px auto, 707px auto, 670px auto;
-    }
-  }
-
   .representation__header {
-    max-width: 720px;
-    min-width: 320px;
+    max-width: 1023px;
     padding: 0 25px;
     z-index: 2;
 
@@ -122,20 +99,22 @@
     }
 
     b {
-      width: 350px;
+      width: auto;
       margin: 0;
       padding: 0;
       margin-bottom: 27px;
       padding-left: 64px;
+      padding-right: 164px;
       font-size: 60px;
       line-height: 70px;
       letter-spacing: 0.07em;
     }
 
     p {
-      max-width: 400px;
+      width: auto;
       margin-bottom: 55px;
       padding-left: 115px;
+      padding-right: 164px;
       font-size: 18px;
       line-height: 29px;
 
@@ -155,26 +134,16 @@
 
 @media (max-width: 767px) {
   .representation {
-    top: -85px;
+    top: 0;
     z-index: 0;
-    min-height: 663px;
-    padding-top: 303px;
-    background-size: 100% 100%, 301px auto, 505px auto;
-    background-position: center top, left calc(50% + 18px) bottom 75.5%, left calc(50% + 245px) bottom 73%;
+    min-height: 578px;
+    padding-top: 218px;
     box-sizing: border-box;
   }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .representation {
-      background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
-      background-size: 2249px auto, 707px auto, 670px auto;
-    }
-  }
-
   .representation__header {
-    max-width: 320px;
-    min-width: 320px;
-    padding: 0 17px;
+    max-width: 767px;
+    padding: 0 16px;
     z-index: 2;
     box-sizing: border-box;
 
@@ -183,17 +152,19 @@
     }
 
     b {
-      width: 240px;
-      margin-bottom: 28px;
+      width: auto;
+      margin-bottom: 26px;
       padding-left: 0;
+      padding-right: 64px;
       font-size: 40px;
       line-height: 47px;
     }
 
     p {
-      max-width: 280px;
+      width: auto;
       margin-bottom: 40px;
       padding-left: 50px;
+      padding-right: 0;
       font-size: 16px;
       line-height: 25px;
 

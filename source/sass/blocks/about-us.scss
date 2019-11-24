@@ -4,7 +4,6 @@
 
 .about-us__wrapper {
   max-width: 1420px;
-  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 93px;
@@ -14,7 +13,6 @@
 
 .about-us__content {
   max-width: 1171px;
-  min-width: 320px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -62,21 +60,22 @@
 @media (max-width: 1023px) {
   .about-us {
     position: relative;
-    top: -32px;
   }
 
   .about-us__wrapper {
-    max-width: 770px;
-    margin-bottom: 5px;
+    max-width: 1023px;
+    margin-bottom: 7px;
     padding: 0 30px;
+    padding-top: 24px;
+    padding-bottom: 30px;
   }
 
   .about-us__content {
-    max-width: 720px;
+    max-width: 1023px;
     min-height: 400px;
     margin-right: 0;
     padding-top: 0;
-    padding-left: 180px;
+    padding-left: 181px;
     background-position: -38px 2px;
     background-size: 251px 361px;
 
@@ -104,9 +103,7 @@
       white-space: pre-wrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 9; /* количество строк */
-      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 9;
     }
   }
 }
@@ -114,17 +111,18 @@
 @media (max-width: 767px) {
   .about-us {
     position: relative;
-    top: -23px;
   }
 
   .about-us__wrapper {
-    max-width: 320px;
+    max-width: 767px;
     margin-bottom: 5px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-bottom: 23px;
   }
 
   .about-us__content {
-    max-width: 320px;
+    max-width: 767px;
     min-height: 523px;
     margin-right: 0;
     padding-top: 0;
@@ -143,7 +141,7 @@
     }
 
     p {
-      max-width: 295px;
+      max-width: none;
       height: 330px;
       margin-bottom: 44px;
       padding-left: 3px;
@@ -156,9 +154,7 @@
       white-space: pre-wrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 15; /* количество строк */
-      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 15;
     }
   }
 }

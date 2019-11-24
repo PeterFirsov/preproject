@@ -1,11 +1,11 @@
 .header-top {
   display: flex;
-  max-width: 1411px;
-  min-width: 320px;
+  max-width: 1471px;
   min-height: 52px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .header-top__nav {
@@ -35,8 +35,7 @@
 @media (max-width: 1023px) {
   .header-top {
     display: flex;
-    max-width: 720px;
-    min-width: 320px;
+    max-width: auto;
     min-height: 52px;
     margin-left: auto;
     margin-right: auto;
@@ -64,8 +63,7 @@
 @media (max-width: 767px) {
   .header-top {
     display: flex;
-    max-width: 320px;
-    min-width: none;
+    max-width: auto;
     min-height: 52px;
     margin-left: auto;
     margin-right: auto;

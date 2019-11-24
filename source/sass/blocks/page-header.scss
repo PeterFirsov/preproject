@@ -4,13 +4,36 @@
   min-height: 85px;
   padding-top: 33px;
   z-index: 1;
+  margin-bottom: 10px;
+  background-color: #1b2d37;
+  background-image: url("../img/background@1x.png"), url("../img/plates@1x.png"), url("../img/twintrangle@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover, auto, auto;
+  background-position: center top, left calc(50% + 430px) bottom 29%, left calc(50% + 405px) bottom 31.7%;
   box-sizing: border-box;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
+      background-size: cover, 707px auto, 670px auto;
+    }
+  }
 }
 
 @media (max-width: 1023px) {
   .page-header {
     min-height: 85px;
     padding-top: 20px;
+    margin-bottom: 30px;
+    background-size: 100% 100%, 468px auto, 528px auto;
+    background-position: center top, left calc(50% + 358px) bottom 67.5%, left calc(50% + 320px) bottom 75%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .page-header {
+        background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
+        background-size: cover, 707px auto, 670px auto;
+      }
+    }
   }
 }
 
@@ -21,6 +44,15 @@
     min-height: 65px;
     padding-top: 17px;
     z-index: 1;
+    background-size: 100% 100%, 301px auto, 505px auto;
+    background-position: center top, left calc(50% + 16px) bottom 78.5%, left calc(50% + 245px) bottom 77%;
     box-sizing: border-box;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .page-header {
+        background-image: url("../img/background@2x.png"), url("../img/plates@2x.png"), url("../img/twintrangle@2x.png");
+        background-size: cover, 707px auto, 670px auto;
+      }
+    }
   }
 }

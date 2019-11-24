@@ -25,9 +25,6 @@
         <a class="button header-top__open" href="#">Заказать звонок</a>
       </div>
     </div>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Интернет-магазин "Smart Device"</h1>
     <section class="representation">
       <header class="representation__header">
         <h2 class="visually-hidden">На чем специализируется наше предприятие</h2>
@@ -37,10 +34,13 @@
         <a class="representation__link" href="#features">Скролл вниз</a>
       </header>
     </section>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет-магазин "Smart Device"</h1>
     <section class="features">
+      <a name="features"></a>
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="features__wrapper">
-        <a name="features"></a>
         <ul>
           <li>
             <svg width="29" height="35" viewBox="0 0 29 35" fill="#00B2FF" xmlns="http://www.w3.org/2000/svg">
@@ -150,22 +150,22 @@
           <span>Мы проконсультируем Вас бесплатно</span>
           <form class="question-form__form" action="#" method="POST">
             <div class="question-form__name">
-              <label>
+              <label aria-label="Имя">
                 <input type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required="">
               </label>
             </div>
             <div class="question-form__phone">
-              <label>
+              <label aria-label="Телефон">
                 <input type="tel" name="tel" placeholder="Телефон" required="">
               </label>
             </div>
             <div class="question-form__question">
-              <label>
+              <label aria-label="Ваш вопрос">
                 <textarea name="question" placeholder="Ваш вопрос" required=""></textarea>
               </label>
             </div>
             <button class="question-form__button button button--sized button--sized-color" type="submit">Задать вопрос</button>
-            <label class="question-form__check">
+            <label class="question-form__check" aria-label="Я согласен на обработку персональных данных">
               <input class="question-form__checkbox visually-hidden" type="checkbox" name="personal_check" required="">
               <span class="question-form__check-indicator"></span>
               Я согласен на обработку  персональных данных
@@ -273,17 +273,17 @@
       <button class="write-us__close" type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
         <label>
-          <input autofocus="" type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required="">
+          <input autofocus="" type="text" name="name" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" aria-label="Имя" required="">
         </label>
         <label>
-          <input type="tel" name="phone" placeholder="Телефон" required="">
+          <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required="">
         </label>
         <label>
-          <textarea name="letter" placeholder="Ваш вопрос" required=""></textarea>
+          <textarea name="letter" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required=""></textarea>
         </label>
         <button class="button button--popup-wide" type="submit">Отправить</button>
         <label class="write-us__check">
-          <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check" required="">
+          <input class="write-us__checkbox visually-hidden" type="checkbox" name="personal_check" aria-label="Я согласен на обработку персональных данных" required="">
           <span class="write-us__check-indicator"></span>
           Я согласен на обработку  персональных данных
         </label>
