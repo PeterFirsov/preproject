@@ -353,6 +353,9 @@
       margin: 0;
       margin-bottom: 0;
       cursor: pointer;
+      background-image: url("../img/minus.svg");
+      background-repeat: no-repeat;
+      background-position: center right;
 
       &:hover {
         color: #00b2ff;
@@ -391,6 +394,9 @@
       margin: 0;
       margin-bottom: 0;
       cursor: pointer;
+      background-image: url("../img/minus.svg");
+      background-repeat: no-repeat;
+      background-position: center right;
 
       &:hover {
         color: #00b2ff;
@@ -405,6 +411,8 @@
         height: 1px;
         background-color: #dddddd;
       }
+
+
     }
 
     .page-footer__coords {
@@ -446,13 +454,7 @@
     }
   }
 
-  .page-footer--minus {
-    background-image: url("../img/minus.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
-  }
-
-  .page-footer--plus {
+  .page-footer .page-footer--plus {
     background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
     background-position: center right;

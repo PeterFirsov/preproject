@@ -19,12 +19,20 @@ navOpener.addEventListener('click', function (evt) {
   evt.preventDefault();
   list.classList.toggle('page-footer--close');
   navOpener.classList.toggle('page-footer--plus');
+  if (!contacts.classList.contains('page-footer--close')) {
+    contacts.classList.toggle('page-footer--close');
+    contOpener.classList.toggle('page-footer--plus');
+  }
 });
 
 contOpener.addEventListener('click', function (evt) {
   evt.preventDefault();
   contacts.classList.toggle('page-footer--close');
   contOpener.classList.toggle('page-footer--plus');
+  if (!list.classList.contains('page-footer--close')) {
+    list.classList.toggle('page-footer--close');
+    navOpener.classList.toggle('page-footer--plus');
+  }
 });
 
 var isStorageSupport = true;
