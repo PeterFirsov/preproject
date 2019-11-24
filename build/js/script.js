@@ -56,6 +56,7 @@ contOpener.addEventListener('click', function (evt) {
 });
 
 var isStorageSupport = true;
+// eslint-disable-next-line no-unused-vars
 var storage = '';
 
 try {
@@ -101,11 +102,17 @@ questForm.addEventListener('submit', function (evt) {
 (function (evt) {
   evt.matches = evt.matches || evt.mozMatchesSelector || evt.msMatchesSelector || evt.oMatchesSelector || evt.webkitMatchesSelector;
   evt.closest = evt.closest || function closest(selector) {
-    if (!this) return null;
-    if (this.matches(selector)) return this;
+    if (!this) {
+      return null;
+    }
+    if (this.matches(selector)) {
+      return this;
+    }
     if (!this.parentElement) {
-      return null
-    } else return this.parentElement.closest(selector)
+      return null;
+    } else {
+      return this.parentElement.closest(selector);
+    }
   };
 }(Element.prototype));
 
