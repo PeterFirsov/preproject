@@ -15,6 +15,26 @@ var contOpener = document.querySelector('.page-footer__contacts h3');
 var list = document.querySelector('.page-footer__nav-wrapper');
 var contacts = document.querySelector('.page-footer__coords');
 
+var featureLink = document.querySelector('.representation__link');
+var featureAncor = document.querySelector('.features [name=features]');
+
+var questionLink = document.querySelector('.representation__button');
+var questionAncor = document.querySelector('.question-form > a');
+
+var scrollIt = function (item) {
+  item.scrollIntoView({behavior: 'smooth'});
+};
+
+featureLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  scrollIt(featureAncor);
+});
+
+questionLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  scrollIt(questionAncor);
+});
+
 navOpener.addEventListener('click', function (evt) {
   evt.preventDefault();
   list.classList.toggle('page-footer--close');

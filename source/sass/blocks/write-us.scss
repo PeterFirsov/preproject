@@ -17,38 +17,38 @@
   position: fixed;
   top: calc(50% - 290px);
   left: calc(50% - 245px);
-  width: 444px;
-  min-height: 550px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 28px;
+  width: 490px;
+  min-height: 605px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 32px;
   background-color: #00b2ff;
   box-sizing: border-box;
 
   h2 {
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 36px;
     font-style: normal;
     font-weight: normal;
-    letter-spacing: 0.01em;
+    letter-spacing: normal;
     color: #ffffff;
   }
 
   p {
-    width: 365px;
+    width: 400px;
     padding: 0;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
     font-family: "PT Mono", "Times New Roman", serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.024em;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: normal;
     color: #ffffff;
   }
 }
@@ -57,12 +57,12 @@
   input,
   textarea {
     width: 100%;
-    padding-left: 21px;
+    padding-left: 22px;
     padding-right: 21px;
     font-family: "PT Mono", "Times New Roman", serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     color: #ffffff;
     border: 1px solid #19baff;
@@ -80,14 +80,14 @@
   }
 
   input {
-    height: 46px;
-    margin-bottom: 29px;
+    height: 52px;
+    margin-bottom: 30px;
   }
 
   textarea {
-    height: 94px;
+    height: 104px;
     padding-top: 9px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     overflow: auto;
   }
 }
@@ -95,13 +95,13 @@
 .write-us__check {
   display: block;
   position: relative;
-  width: 100%;
+  width: 380px;
   padding-top: 7px;
-  padding-left: 42px;
+  padding-left: 48px;
   font-family: "PT Mono", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   box-sizing: border-box;
   cursor: pointer;
@@ -115,9 +115,9 @@
   display: block;
   position: absolute;
   top: 10px;
-  left: 0;
-  width: 14px;
-  height: 14px;
+  left: -1px;
+  width: 15px;
+  height: 15px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
 
