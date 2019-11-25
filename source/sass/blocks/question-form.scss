@@ -74,6 +74,7 @@
     color: #ffffff;
     border: 1px solid #19baff;
     background-color: #19baff;
+    appearance: none;
     border-radius: unset;
     box-shadow: unset;
     box-sizing: border-box;
@@ -106,6 +107,7 @@
     resize: none;
     overflow: auto;
     border-radius: unset;
+    appearance: none;
     box-shadow: unset;
 
     &::placeholder {
